@@ -3,7 +3,7 @@
     { "source": "/", "destination": "/api/home.js" },
     { "source": "/home", "destination": "/api/home.js" },
     { "source": "/users", "destination": "/api/users.js" },
-    { "src": "/search/:search", "destination": "/api/search.js" }
+    { "source": "/search/:search", "destination": "/api/search.js" }
   ],
   "headers": [
     {
