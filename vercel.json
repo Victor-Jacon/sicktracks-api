@@ -1,25 +1,9 @@
 {
-  "routes":[
-    {
-      "src": "/",
-      "dest": "/api/users.js"
-    },
-    {
-      "src": "/users",
-      "methods": [
-        "POST",
-        "GET"
-      ],
-      "dest": "/api/users.js"
-    },
-    {
-      "src": "/home",
-      "dest": "/api/home.js"
-    },
-    {
-      "src": "/search",
-      "dest": "/api/search.js"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/api/home" },
+    { "source": "/home", "destination": "/api/home.js" },
+    { "source": "/users", "destination": "/api/users.js" },
+    { "src": "/search", "destination": "/api/search.js" }
   ],
   "headers": [
     {
