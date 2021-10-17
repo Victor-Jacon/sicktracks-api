@@ -9,7 +9,7 @@ module.exports = async (req,res) => {
 
     try {
         // console.log(req.query)
-        const search = req.query.q
+        const search = req.query.search
         // console.log(search)
         const response = await api.get(`/search?q=${search}`)
         res.json({ error: false, data: response.data})
